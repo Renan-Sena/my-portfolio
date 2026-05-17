@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark" data-lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Renan Sena · Engenheiro de Software Full Stack | TypeScript, Node.js, Vue.js</title>
+
+    <!-- Meta tags -->
+    <meta name="description"
+        content="Portfólio de Renan Sena — Engenheiro de Software Full Stack especializado em TypeScript, Node.js e Vue.js. Desenvolvendo soluções para os setores automotivo e bancário." />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <meta name="author" content="Renan Leal Sena" />
+    <link rel="canonical" href="https://renansena.dev" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Renan Sena · Engenheiro de Software Full Stack" />
+    <meta property="og:description"
+        content="Portfólio de Renan Sena — soluções web robustas com TypeScript, Node.js e Vue.js." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://renansena.dev" />
+    <meta property="og:image" content="assets\og_image_renan_sena.png" />
+    <meta property="og:image:alt" content="Renan Sena — Engenheiro de Software" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Renan Sena · Software Engineer" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Renan Sena · Engenheiro de Software Full Stack" />
+    <meta name="twitter:description"
+        content="Especialista em TypeScript, Node.js e Vue.js. Portfólio com projetos reais." />
+    <meta name="twitter:image" content="assets\og_image_renan_sena.png" />
+
+    <meta name="theme-color" content="#00E5A0" />
+    <link rel="icon" type="image/svg+xml" href="assets/RS_logo1.svg" />
+    <link rel="apple-touch-icon" href="assets/RS_logo1.svg" />
+
+    <!-- Pre-connections -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Instrument+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+    <nav role="navigation" aria-label="Navegação principal">
+        <div class="nav-logo">RS<span aria-hidden="true">.</span></div>
+        <div class="nav-links">
+            <a href="#about" data-i18n="nav.about">Sobre</a>
+            <a href="#skills" data-i18n="nav.skills">Habilidades</a>
+            <a href="#projects" data-i18n="nav.projects">Projetos</a>
+            <a href="#contact" data-i18n="nav.contact">Contato</a>
+        </div>
+        <div class="nav-controls">
+            <button class="btn-icon" id="langToggle" aria-label="Trocar idioma para inglês">EN</button>
+            <button class="btn-icon" id="themeToggle" aria-label="Trocar para tema claro">
+                <i class="fas fa-sun"></i>
+            </button>
+    </nav>
+
+    <main id="main-content">
+        <!-- HERO -->
+        <section id="hero" aria-labelledby="hero-heading">
+            <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+            <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+            <div class="hero-inner">
+                <div class="hero-badge" role="status" data-i18n="hero.badge">Disponível para oportunidades</div>
+                <h1 class="hero-title" id="hero-heading">
+                    <span class="line1">Renan</span><br>
+                    <span class="line2">Sena<span class="accent" aria-hidden="true">.</span></span>
+                </h1>
+                <p class="hero-desc" data-i18n="hero.desc">
+                    Engenheiro de Software Full Stack especializado em TypeScript, Node.js e Vue.js —
+                    construindo aplicações web robustas para os setores automotivo e bancário.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary"><span data-i18n="hero.cta1">Ver projetos</span> →</a>
+                    <a href="#contact" class="btn-outline"><span data-i18n="hero.cta2">Entrar em contato</span></a>
+                </div>
+            </div>
+            <div class="hero-scroll" aria-hidden="true">
+                <span data-i18n="hero.scroll">scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" aria-labelledby="about-heading">
+            <div class="section-label" data-i18n="about.label">Sobre mim</div>
+            <h2 class="section-title" id="about-heading" data-i18n="about.title">Quem eu sou</h2>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p data-i18n="about.p1">Sou um <strong>Engenheiro de Software Full Stack</strong> com 2 anos de
+                        experiência desenvolvendo aplicações web de alta performance para os setores automotivo e
+                        bancário.</p>
+                    <p data-i18n="about.p2">Tenho foco em <strong>arquitetura de software limpa</strong>, segurança de
+                        aplicações e automação de processos. Gosto de construir sistemas que escalam e que fazem sentido
+                        para quem os usa.</p>
+                    <p data-i18n="about.p3">Atualmente cursando <strong>Engenharia de Computação</strong> no Centro
+                        Universitário Fametro — Manaus/AM, com conclusão prevista para 2026.</p>
+                </div>
+                <div class="about-stats reveal" role="list" aria-label="Estatísticas profissionais">
+                    <div class="stat-card" role="listitem">
+                        <div class="stat-num">2+</div>
+                        <div class="stat-label" data-i18n="stat.exp">Anos de experiência</div>
+                    </div>
+                    <div class="stat-card" role="listitem">
+                        <div class="stat-num">2</div>
+                        <div class="stat-label" data-i18n="stat.sectors">Setores atendidos</div>
+                    </div>
+                    <div class="stat-card" role="listitem">
+                        <div class="stat-num">5+</div>
+                        <div class="stat-label" data-i18n="stat.tech">Tecnologias principais</div>
+                    </div>
+                    <div class="stat-card" role="listitem">
+                        <div class="stat-num">B2</div>
+                        <div class="stat-label" data-i18n="stat.eng">Inglês avançado</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" aria-labelledby="skills-heading">
+            <div class="section-label" data-i18n="skills.label">Habilidades</div>
+            <h2 class="section-title" id="skills-heading" data-i18n="skills.title">Tecnologias</h2>
+            <p class="section-sub" data-i18n="skills.sub">Stack separada por área de atuação.</p>
+            <div class="skills-columns">
+                <!-- FRONTEND CARD -->
+                <div class="skill-col-card reveal" role="region" aria-label="Tecnologias Front-end">
+                    <div class="skill-col-header">
+                        <div class="skill-col-icon fe-col"><svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="currentColor"
+                                    stroke-width="2" />
+                                <polyline points="9 22 9 12 15 12 15 22" stroke="currentColor" stroke-width="2" />
+                            </svg></div>
+                        <div class="skill-col-title">Front-end</div><span class="skill-col-badge badge-fe">client</span>
+                    </div>
+                    <div role="list">
+                        <div class="skill-item">
+                            <div class="skill-logo"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" />
+                            </div>
+                            <div>
+                                <div class="skill-item-name">Vue 3</div>
+                                <div class="skill-item-sub">Framework</div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-logo"><i class="devicon-react-original colored"></i></div>
+                            <div>
+                                <div class="skill-item-name">React</div>
+                                <div class="skill-item-sub">Framework</div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-logo"><i class="devicon-nextjs-plain"></i></div>
+                            <div>
+                                <div class="skill-item-name">Next.js</div>
+                                <div class="skill-item-sub">Meta‑framework</div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-logo"><i class="devicon-typescript-plain colored"></i></div>
+                            <div>
+                                <div class="skill-item-name">TypeScript</div>
+                                <div class="skill-item-sub">Language</div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-logo"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" /><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                            </div>
+                            <div>
+                                <div class="skill-item-name">HTML / CSS</div>
+                                <div class="skill-item-sub">Markup & Style</div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-logo"><img src="https://pinia.vuejs.org/logo.svg" /></div>
+                            <div>
+                                <div class="skill-item-name">Pinia</div>
+                                <div class="skill-item-sub">State Management</div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BACKEND CARD -->
+                <div class="skill-col-card reveal" role="region" aria-label="Tecnologias Back-end">
+                    <div class="skill-col-header">
+                        <div class="skill-col-icon be-col"><svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <ellipse cx="12" cy="5" rx="9" ry="3" stroke="currentColor" stroke-width="2" />
+                                <path d="M21 12c0 1.657-4.03 3-9 3s-9-1.343-9-3" stroke="currentColor"
+                                    stroke-width="2" />
+                                <path d="M3 5v14c0 1.657 4.03 3 9 3s9-1.343 9-3V5" stroke="currentColor"
+                                    stroke-width="2" />
+                            </svg></div>
+                        <div class="skill-col-title">Back-end</div><span class="skill-col-badge badge-be">server</span>
+                    </div>
+                    <div role="list">
+                        <div class="skill-item">
+                            <div class="skill-logo"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+                            </div>
+                            <div>
+                                <div class="skill-item-name">Node.js</div>
+                                <div class="skill-item-sub">Runtime</div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-logo"><i class="devicon-express-original"></i></div>
+                            <div>
+                                <div class="skill-item-name">Express</div>
+                                <div class="skill-item-sub">Framework</div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-logo"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                            </div>
+                            <div>
+                                <div class="skill-item-name">Python</div>
+                                <div class="skill-item-sub">Language</div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-logo"><i class="devicon-prisma-original"></i></div>
+                            <div>
+                                <div class="skill-item-name">Prisma ORM</div>
+                                <div class="skill-item-sub">ORM</div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-logo"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+                            </div>
+                            <div>
+                                <div class="skill-item-name">PostgreSQL</div>
+                                <div class="skill-item-sub">Database</div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-logo"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                            </div>
+                            <div>
+                                <div class="skill-item-name">Git / GitHub</div>
+                                <div class="skill-item-sub">Version Control</div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- COMPETENCIES CARD -->
+                <div class="skill-col-card reveal" role="region" aria-label="Competências adicionais">
+                    <div class="skill-col-header">
+                        <div class="skill-col-icon extra-col"><svg width="20" height="20" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2" />
+                                <path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="2" />
+                                <path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" />
+                            </svg></div>
+                        <div class="skill-col-title" data-i18n="skills.extra.title">Competências</div><span
+                            class="skill-col-badge badge-ex">extra</span>
+                    </div>
+                    <div role="list">
+                        <div class="skill-item">
+                            <div class="skill-logo"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg" />
+                            </div>
+                            <div>
+                                <div class="skill-item-name">OpenCV</div>
+                                <div class="skill-item-sub">Computer Vision</div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot"></div>
+                                <div class="level-dot"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-logo"><svg viewBox="0 0 32 32" fill="none">
+                                    <rect width="32" height="32" rx="4" fill="#1a1a2e" /><text x="4" y="22"
+                                        font-size="13" fill="#a855f7" font-weight="700"
+                                        font-family="monospace">DDD</text>
+                                </svg></div>
+                            <div>
+                                <div class="skill-item-name">DDD / Clean Arch</div>
+                                <div class="skill-item-sub">Architecture</div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-logo"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg" />
+                            </div>
+                            <div>
+                                <div class="skill-item-name">Docker</div>
+                                <div class="skill-item-sub">DevOps</div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot"></div>
+                                <div class="level-dot"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-logo"><svg viewBox="0 0 32 32" fill="none">
+                                    <rect width="32" height="32" rx="4" fill="#1a1a2e" />
+                                    <path d="M6 10h20M6 16h14M6 22h17" stroke="#a855f7" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg></div>
+                            <div>
+                                <div class="skill-item-name">REST APIs</div>
+                                <div class="skill-item-sub">Integration</div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-logo"><svg viewBox="0 0 32 32" fill="none">
+                                    <rect width="32" height="32" rx="4" fill="#1a1a2e" />
+                                    <path d="M8 24l4-12 4 8 3-5 3 9" stroke="#a855f7" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg></div>
+                            <div>
+                                <div class="skill-item-name">AES-256-GCM</div>
+                                <div class="skill-item-sub">Cryptography</div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-logo"><svg viewBox="0 0 32 32" fill="none">
+                                    <rect width="32" height="32" rx="4" fill="#1a1a2e" />
+                                    <rect x="6" y="6" width="8" height="8" rx="2" stroke="#a855f7" stroke-width="1.5"
+                                        fill="none" />
+                                    <rect x="18" y="6" width="8" height="8" rx="2" stroke="#a855f7" stroke-width="1.5"
+                                        fill="none" />
+                                    <rect x="6" y="18" width="8" height="8" rx="2" stroke="#a855f7" stroke-width="1.5"
+                                        fill="none" />
+                                    <path d="M22 18v4h4" stroke="#a855f7" stroke-width="1.5" stroke-linecap="round"
+                                        fill="none" />
+                                </svg></div>
+                            <div>
+                                <div class="skill-item-name">Kanban / Scrum</div>
+                                <div class="skill-item-sub">Methodology</div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-logo"><svg viewBox="0 0 32 32" fill="none">
+                                    <rect width="32" height="32" rx="4" fill="#1a1a2e" />
+                                    <path d="M10 16l4 4 8-8" stroke="#a855f7" stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg></div>
+                            <div>
+                                <div class="skill-item-name" data-i18n="skills.english">Inglês B2</div>
+                                <div class="skill-item-sub">Advanced</div>
+                            </div>
+                            <div class="skill-item-level">
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot active"></div>
+                                <div class="level-dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" aria-labelledby="projects-heading">
+            <div class="section-label reveal" data-i18n="proj.label">Projetos</div>
+            <h2 class="section-title reveal" id="projects-heading" data-i18n="proj.title">O que construí</h2>
+            <p class="section-sub reveal" data-i18n="proj.sub">Clique em um projeto para ver detalhes.</p>
+            <div class="carousel-outer" role="region" aria-label="Carrossel de projetos">
+                <div class="carousel-track" id="carousel" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <div class="section-label reveal" data-i18n="contact.label">Contato</div>
+            <h2 class="section-title reveal" id="contact-heading" data-i18n="contact.title">Vamos conversar</h2>
+            <p class="section-sub reveal" data-i18n="contact.sub">Aberto a novas oportunidades e projetos.</p>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <a class="contact-card" href="https://wa.me/5592993200386" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="contact-card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.50002 12C3.50002 7.30558 7.3056 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C10.3278 20.5 8.77127 20.0182 7.45798 19.1861C7.21357 19.0313 6.91408 18.9899 6.63684 19.0726L3.75769 19.9319L4.84173 17.3953C4.96986 17.0955 4.94379 16.7521 4.77187 16.4751C3.9657 15.176 3.50002 13.6439 3.50002 12ZM12 1.5C6.20103 1.5 1.50002 6.20101 1.50002 12C1.50002 13.8381 1.97316 15.5683 2.80465 17.0727L1.08047 21.107C0.928048 21.4637 0.99561 21.8763 1.25382 22.1657C1.51203 22.4552 1.91432 22.5692 2.28599 22.4582L6.78541 21.1155C8.32245 21.9965 10.1037 22.5 12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5ZM14.2925 14.1824L12.9783 15.1081C12.3628 14.7575 11.6823 14.2681 10.9997 13.5855C10.2901 12.8759 9.76402 12.1433 9.37612 11.4713L10.2113 10.7624C10.5697 10.4582 10.6678 9.94533 10.447 9.53028L9.38284 7.53028C9.23954 7.26097 8.98116 7.0718 8.68115 7.01654C8.38113 6.96129 8.07231 7.046 7.84247 7.24659L7.52696 7.52195C6.76823 8.18414 6.3195 9.2723 6.69141 10.3741C7.07698 11.5163 7.89983 13.314 9.58552 14.9997C11.3991 16.8133 13.2413 17.5275 14.3186 17.8049C15.1866 18.0283 16.008 17.7288 16.5868 17.2572L17.1783 16.7752C17.4313 16.5691 17.5678 16.2524 17.544 15.9269C17.5201 15.6014 17.3389 15.308 17.0585 15.1409L15.3802 14.1409C15.0412 13.939 14.6152 13.9552 14.2925 14.1824Z"
+                                    fill="#ffffff" />
+                            </svg></div>
+                        <div>
+                            <div class="contact-card-label">WhatsApp</div>
+                            <div class="contact-card-value">+55 92 99320-0386</div>
+                        </div>
+                    </a>
+                    <a class="contact-card" href="mailto:renanlealsena00@gmail.com"><i
+                            class="devicon-google-plain contact-card-icon"></i>
+                        <div>
+                            <div class="contact-card-label">Email</div>
+                            <div class="contact-card-value">renanlealsena00@gmail.com</div>
+                        </div>
+                    </a>
+                    <a class="contact-card" href="https://linkedin.com/in/renan-leal-sena" target="_blank"><i
+                            class="devicon-linkedin-plain contact-card-icon"></i>
+                        <div>
+                            <div class="contact-card-label">LinkedIn</div>
+                            <div class="contact-card-value">renan-leal-sena</div>
+                        </div>
+                    </a>
+                    <a class="contact-card" href="https://github.com/Renan-Sena" target="_blank"><i
+                            class="devicon-github-original contact-card-icon"></i>
+                        <div>
+                            <div class="contact-card-label">GitHub</div>
+                            <div class="contact-card-value">github.com/Renan-Sena</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="contact-form reveal" role="form">
+                    <div class="form-row">
+                        <div class="field"><label for="fname" data-i18n="form.name">Nome <span
+                                    class="req">*</span></label><input type="text" id="fname" name="name"
+                                placeholder="Seu nome" data-i18n-ph="form.name.ph" required aria-required="true" />
+                        </div>
+                        <div class="field">
+                            <label for="fphone" data-i18n="form.phone">Telefone / WhatsApp <span
+                                    class="req">*</span></label>
+                            <div class="phone-wrapper">
+                                <select id="countryCode" class="country-select" aria-label="Código do país">
+                                    <option value="55" data-i18n="country.br">🇧🇷 +55 (Brasil)</option>
+                                    <option value="54" data-i18n="country.ar">🇦🇷 +54 (Argentina)</option>
+                                    <option value="33" data-i18n="country.fr">🇫🇷 +33 (França)</option>
+                                    <option value="49" data-i18n="country.de">🇩🇪 +49 (Alemanha)</option>
+                                    <option value="39" data-i18n="country.it">🇮🇹 +39 (Itália)</option>
+                                    <option value="52" data-i18n="country.mx">🇲🇽 +52 (México)</option>
+                                    <option value="44" data-i18n="country.uk">🇬🇧 +44 (Reino Unido)</option>
+                                    <option value="34" data-i18n="country.es">🇪🇸 +34 (Espanha)</option>
+                                    <option value="1" data-i18n="country.us">🇺🇸 +1 (EUA/Canadá)</option>
+                                    <option value="81" data-i18n="country.jp">🇯🇵 +81 (Japão)</option>
+                                    <option value="61" data-i18n="country.au">🇦🇺 +61 (Austrália)</option>
+                                    <option value="86" data-i18n="country.cn">🇨🇳 +86 (China)</option>
+                                    <option value="91" data-i18n="country.in">🇮🇳 +91 (Índia)</option>
+                                    <option value="351" data-i18n="country.pt">🇵🇹 +351 (Portugal)</option>
+                                </select>
+                                <input type="tel" id="fphone" name="phone" placeholder="(99) 99999-9999"
+                                    data-i18n-ph="form.phone.ph" required aria-required="true" autocomplete="tel"
+                                    class="phone-input" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field"><label for="femail">Email <span class="req">*</span></label><input type="email"
+                            id="femail" name="email" placeholder="seu@email.com" required aria-required="true" /></div>
+                    <div class="field"><label for="fsubject" data-i18n="form.subject">Assunto</label><input type="text"
+                            id="fsubject" name="subject" placeholder="Sobre o que você quer falar?"
+                            data-i18n-ph="form.subject.ph" /></div>
+                    <div class="field"><label for="fmessage" data-i18n="form.message">Mensagem <span
+                                class="req">*</span></label><textarea id="fmessage" name="message"
+                            placeholder="Sua mensagem..." data-i18n-ph="form.message.ph" required
+                            aria-required="true"></textarea></div>
+                    <button type="button" class="form-submit" id="formSubmit">
+                        <span data-i18n="form.send">Enviar mensagem</span>
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-brand">RS<span aria-hidden="true">.</span></div>
+        <div class="footer-copy" data-i18n="footer.copy">© 2025 Renan Sena · Manaus, AM</div>
+        <div class="footer-socials">
+            <a class="social-btn" href="https://github.com/Renan-Sena" target="_blank"><i
+                    class="devicon-github-original"></i></a>
+            <a class="social-btn" href="https://linkedin.com/in/renan-leal-sena" target="_blank"><i
+                    class="devicon-linkedin-plain"></i></a>
+            <a class="social-btn" href="https://wa.me/5592993200386" target="_blank"><svg width="18" height="18"
+                    viewBox="0 0 24 24" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M3.50002 12C3.50002 7.30558 7.3056 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C10.3278 20.5 8.77127 20.0182 7.45798 19.1861C7.21357 19.0313 6.91408 18.9899 6.63684 19.0726L3.75769 19.9319L4.84173 17.3953C4.96986 17.0955 4.94379 16.7521 4.77187 16.4751C3.9657 15.176 3.50002 13.6439 3.50002 12ZM12 1.5C6.20103 1.5 1.50002 6.20101 1.50002 12C1.50002 13.8381 1.97316 15.5683 2.80465 17.0727L1.08047 21.107C0.928048 21.4637 0.99561 21.8763 1.25382 22.1657C1.51203 22.4552 1.91432 22.5692 2.28599 22.4582L6.78541 21.1155C8.32245 21.9965 10.1037 22.5 12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5ZM14.2925 14.1824L12.9783 15.1081C12.3628 14.7575 11.6823 14.2681 10.9997 13.5855C10.2901 12.8759 9.76402 12.1433 9.37612 11.4713L10.2113 10.7624C10.5697 10.4582 10.6678 9.94533 10.447 9.53028L9.38284 7.53028C9.23954 7.26097 8.98116 7.0718 8.68115 7.01654C8.38113 6.96129 8.07231 7.046 7.84247 7.24659L7.52696 7.52195C6.76823 8.18414 6.3195 9.2723 6.69141 10.3741C7.07698 11.5163 7.89983 13.314 9.58552 14.9997C11.3991 16.8133 13.2413 17.5275 14.3186 17.8049C15.1866 18.0283 16.008 17.7288 16.5868 17.2572L17.1783 16.7752C17.4313 16.5691 17.5678 16.2524 17.544 15.9269C17.5201 15.6014 17.3389 15.308 17.0585 15.1409L15.3802 14.1409C15.0412 13.939 14.6152 13.9552 14.2925 14.1824Z"
+                        fill="currentColor" />
+                </svg></a>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast" role="alert"><i class="fa-sharp fa-light fa-circle-check" style="color: rgb(99, 230, 190);"></i><span id="toastMsg">Mensagem enviada com
+            sucesso!</span></div>
+    <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" tabindex="-1">
+        <div class="modal" id="modal"><button class="modal-close" id="modalClose">✕</button>
+            <div id="modalImgArea"></div>
+            <div class="modal-content">
+                <h2 class="modal-name" id="modalName"></h2>
+                <p class="modal-desc" id="modalDesc"></p>
+                <div class="modal-tags" id="modalTags"></div>
+                <div class="modal-links" id="modalLinks"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/projectsData.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/scrollReveal.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
