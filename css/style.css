@@ -996,6 +996,22 @@ section {
     pointer-events: all
 }
 
+/* Para os cards do carrossel */
+.proj-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Para o modal */
+.modal-img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    background: var(--bg3);
+}
+
 .modal {
     background: var(--card);
     border: 1px solid var(--border);
