@@ -8,7 +8,7 @@ const projects = {
             tags: ["Node.js", "TypeScript", "Vue 3", "PostgreSQL", "Prisma", "JWT", "OAuth", "2FA"],
             github: "https://github.com/Renan-Sena/TaskForge",
             live: null,
-            imgPlaceholder: "https://my-portfolio-eight-iota-22.vercel.app/assets/Manual da marca TaskFoge (1200 x 630 px).svg",
+            imgPlaceholder: "assets/Manual da marca TaskFoge (1200 x 630 px).svg",
         },
         {
             icon: "🥋",
@@ -50,7 +50,7 @@ const projects = {
             tags: ["Node.js", "TypeScript", "Vue 3", "PostgreSQL", "Prisma", "JWT", "OAuth", "2FA"],
             github: "https://github.com/Renan-Sena/TaskForge",
             live: null,
-            imgPlaceholder: "https://my-portfolio-eight-iota-22.vercel.app/assets/Manual da marca TaskFoge (1200 x 630 px).svg",
+            imgPlaceholder: "assets/Manual da marca TaskFoge (1200 x 630 px).svg",
         },
         {
             icon: "🥋",

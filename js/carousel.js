@@ -12,10 +12,10 @@ function renderCarousel(lang) {
             ? `<img src="${p.imgPlaceholder}" alt="${p.name}" class="proj-img" loading="lazy" />`
             : `<div class="proj-img-placeholder" aria-hidden="true">${p.imgPlaceholder || '📋'}</div>`
         }
-    <div class="proj-img-overlay" aria-hidden="true">
-        <div class="proj-overlay-hint"><i class="fas fa-search"></i> ${hint}</div>
-    </div>
-</div>
+            <div class="proj-img-overlay" aria-hidden="true">
+                <div class="proj-overlay-hint"><i class="fas fa-search"></i> ${hint}</div>
+            </div>
+        </div>
             <div class="proj-body">
                 <div class="proj-top">
                     <div class="proj-name">${p.name}</div>
