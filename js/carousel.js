@@ -3,14 +3,19 @@ function renderCarousel(lang) {
     if (!track) return;
     const projs = [...projects[lang], ...projects[lang], ...projects[lang]];
     const hint = i18n[lang]['carousel.hint'];
-    
+
     track.innerHTML = projs.map((p, i) => `
         <article class="proj-card" role="button" tabindex="0" aria-label="${p.name}: ${p.shortDesc}" data-proj-index="${i % projects[lang].length}">
             <div class="proj-line" aria-hidden="true"></div>
             <div class="proj-img-wrap">
-                <div class="proj-img-placeholder" aria-hidden="true">${p.imgPlaceholder}</div>
-                <div class="proj-img-overlay" aria-hidden="true"><div class="proj-overlay-hint"><i class="fas fa-search" aria-hidden="true"></i> ${hint}</div></div>
-            </div>
+    ${p.imgPlaceholder && (p.imgPlaceholder.startsWith('assets/') || p.imgPlaceholder.startsWith('http'))
+            ? `<img src="${p.imgPlaceholder}" alt="${p.name}" class="proj-img" loading="lazy" />`
+            : `<div class="proj-img-placeholder" aria-hidden="true">${p.imgPlaceholder || '📋'}</div>`
+        }
+    <div class="proj-img-overlay" aria-hidden="true">
+        <div class="proj-overlay-hint"><i class="fas fa-search"></i> ${hint}</div>
+    </div>
+</div>
             <div class="proj-body">
                 <div class="proj-top">
                     <div class="proj-name">${p.name}</div>
